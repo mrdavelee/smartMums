@@ -1,0 +1,46 @@
+1485206868a:1:{s:21:"pages-blog/header.htm";a:6:{s:8:"fileName";s:21:"pages-blog/header.htm";s:7:"content";s:946:"==
+<div class="lt-row row">
+  <div class="lt-col col s12">
+    <div class="lt-parallax-header parallax-container" style="height: 400px;">
+      {% if post.featured_images|slice(0, 1) %}
+      {% for image in post.featured_images|slice(0, 1) %}
+      <div class="lt-parallax parallax"><img data-src="{{ image.filename }}" src="{{ image.path }}" alt="image"></div>
+      {% endfor %}
+      {% else %}
+      <div class="lt-parallax parallax"><img src="{{ 'assets/img/pages/blog/header/blue.png'|theme }}" alt="image"></div>
+      {% endif %}
+      <div class="lt-parallax-content">
+        <div class="valign-wrapper" style="height: 400px;">
+          <div class="valign">
+            <div class="container">
+              <h2 class="lt-title">{{ post.title }}</h2>
+              <p class="lt-subtitle flow-text">{{ post.summary }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>";s:5:"mtime";i:1484857183;s:6:"markup";s:942:"<div class="lt-row row">
+  <div class="lt-col col s12">
+    <div class="lt-parallax-header parallax-container" style="height: 400px;">
+      {% if post.featured_images|slice(0, 1) %}
+      {% for image in post.featured_images|slice(0, 1) %}
+      <div class="lt-parallax parallax"><img data-src="{{ image.filename }}" src="{{ image.path }}" alt="image"></div>
+      {% endfor %}
+      {% else %}
+      <div class="lt-parallax parallax"><img src="{{ 'assets/img/pages/blog/header/blue.png'|theme }}" alt="image"></div>
+      {% endif %}
+      <div class="lt-parallax-content">
+        <div class="valign-wrapper" style="height: 400px;">
+          <div class="valign">
+            <div class="container">
+              <h2 class="lt-title">{{ post.title }}</h2>
+              <p class="lt-subtitle flow-text">{{ post.summary }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

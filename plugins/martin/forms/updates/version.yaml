@@ -1,0 +1,21 @@
+1.0.0:
+    - First version of Magic Forms
+    - create_records_table.php
+1.0.1:
+    - Added CSRF protection
+1.1.0:
+    - Added reCAPTCHA
+1.1.1:
+    - Fix when using reCAPTCHA + allowed fields
+1.1.2:
+    - Filter forms records
+    - Search inside stored data
+    - Organize your forms on custom groups
+    - add_group_field.php
+1.2.0:
+    - Export stored data in CSV format
+1.2.1:
+    - Auto-response email on form submit
+    - Added Turkish language
+1.2.2:
+    - Override notifications and auto-response email subjects

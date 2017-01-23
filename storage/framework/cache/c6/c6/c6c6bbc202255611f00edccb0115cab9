@@ -1,0 +1,86 @@
+1485206868a:1:{s:9:"login.htm";a:10:{s:8:"fileName";s:9:"login.htm";s:7:"content";s:1026:"title = "Join us"
+url = "/login"
+layout = "octaskin"
+is_hidden = 0
+
+[account]
+redirect = "home"
+paramCode = "code"
+==
+<section id="lt-header" class="lt-section lt-section-fullwidth section">
+  <div class="lt-container container">
+    <div class="lt-content lt-header-content">
+      {% partial "pages-account/header" %}
+    </div>
+  </div>
+</section>
+
+
+<section id="lt-mainpage" class="lt-section section">
+  <div class="lt-container container">
+    <div class="lt-content lt-mainpage-content">
+      {% if not user %}
+
+    <div class="row">
+    <div class="col m6">
+            <h3>Sign in</h3>
+            {% partial account ~ '::signin' %}
+        </div>
+
+        <div class="col m6">
+            <h3>Register</h3>
+            {% partial account ~ '::register' %}
+        </div>
+
+    </div>
+
+{% else %}
+
+    {% partial account ~ '::activation_check' %}
+
+    {% partial account ~ '::update' %}
+
+    {% partial account ~ '::deactivate_link' %}
+
+{% endif %}
+    </div>
+  </div>
+</section>";s:5:"mtime";i:1485128543;s:6:"markup";s:908:"<section id="lt-header" class="lt-section lt-section-fullwidth section">
+  <div class="lt-container container">
+    <div class="lt-content lt-header-content">
+      {% partial "pages-account/header" %}
+    </div>
+  </div>
+</section>
+
+
+<section id="lt-mainpage" class="lt-section section">
+  <div class="lt-container container">
+    <div class="lt-content lt-mainpage-content">
+      {% if not user %}
+
+    <div class="row">
+    <div class="col m6">
+            <h3>Sign in</h3>
+            {% partial account ~ '::signin' %}
+        </div>
+
+        <div class="col m6">
+            <h3>Register</h3>
+            {% partial account ~ '::register' %}
+        </div>
+
+    </div>
+
+{% else %}
+
+    {% partial account ~ '::activation_check' %}
+
+    {% partial account ~ '::update' %}
+
+    {% partial account ~ '::deactivate_link' %}
+
+{% endif %}
+    </div>
+  </div>
+</section>";s:4:"code";N;s:5:"title";s:7:"Join us";s:3:"url";s:6:"/login";s:6:"layout";s:8:"octaskin";s:9:"is_hidden";s:1:"0";s:7:"account";a:2:{s:8:"redirect";s:4:"home";s:9:"paramCode";s:4:"code";}}}

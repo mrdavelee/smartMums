@@ -1,0 +1,35 @@
+==
+<!-- Nav -->
+<nav class="navbar navbar-fixed-top navbar-light bg-faded">
+  <div class="container">
+    <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-toggleable-sm" id="navbarResponsive">
+      <a class="navbar-brand" href="{{ 'home'|page }}">Pinnacle</a>
+      <ul class="nav navbar-nav float-right">
+        <li class="nav-item {% if this.page.id == 'home' %}active{% endif %}">
+          <a class="nav-link" href="{{ 'home'|page }}">Home
+            {% if this.page.id == 'home' %}
+              <span class="sr-only">(current)</span>
+            {% endif %}
+          </a>
+        </li>
+        <li>
+                        <a href="{{ 'account'|page }}">Account</a>
+                    </li>
+                    <li>
+                        <a href="{{ 'blog'|page }}">Blog</a>
+                    </li>
+                    <li>
+                        <a href="{{ 'forum'|page }}">Forum</a>
+                    </li>
+        <li class="nav-item {% if this.page.id == 'example' %}active{% endif %}">
+          <a class="nav-link" href="{{ 'example'|page }}">Example
+            {% if this.page.id == 'example' %}
+              <span class="sr-only">(current)</span>
+            {% endif %}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

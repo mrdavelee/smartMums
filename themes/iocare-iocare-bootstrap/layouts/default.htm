@@ -1,0 +1,38 @@
+description = "Material Bootstrap Default layout"
+
+[session]
+security = "all"
+redirect = "home"
+==
+<?php
+function onStart()
+{
+	if($this->page->id=="allelements")
+	{
+	$this->addCss('//fezvrasta.github.io/snackbarjs/dist/snackbar.min.css');
+	$this->addJs('//cdnjs.cloudflare.com/ajax/libs/noUiSlider/6.2.0/jquery.nouislider.min.js');
+	$this->addJs('//fezvrasta.github.io/snackbarjs/dist/snackbar.min.js');
+}
+
+}
+?>
+==
+{% partial 'header' %}
+
+{% partial 'navigation' %}
+
+<!-- Content -->
+<section id="layout-content">
+	<div class="jumbotron">
+		<div class="container">
+			<h1>{{this.page.title}}</h1>
+			<p>{{this.page.description}}</p>
+		</div>
+	</div>
+</section>
+<div class="container">
+	{% page %}
+</div>
+<div class="container">
+{% partial 'footer' %}
+</div>

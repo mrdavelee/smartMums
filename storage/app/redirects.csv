@@ -1,0 +1,5 @@
+1,exact,cms_page,/my-account,,my-account-login,,301,null,,
+2,exact,cms_page,/my-account-login,,register,,301,null,,
+3,exact,cms_page,/my-account-login,,login,,301,null,,
+6,exact,cms_page,/account,,login,,301,null,,
+7,exact,cms_page,/account,,login2,,301,null,,

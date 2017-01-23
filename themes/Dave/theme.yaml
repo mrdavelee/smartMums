@@ -1,0 +1,6 @@
+name: 'Ocean Ward'
+description: 'Families of Ocean Ward - For families of heart children treated on E1, Ocean Ward, Southampton'
+author: 'David Lee'
+homepage: 'https://www.laratify.com/'
+code: octobercms-octaskin
+form: config/fields.yaml

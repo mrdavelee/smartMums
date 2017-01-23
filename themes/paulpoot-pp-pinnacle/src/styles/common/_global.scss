@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------
+# Global
+--------------------------------------------------------------*/
+html, body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.content {
+  padding: 20px 0;
+}
+.jumbotron {
+  box-shadow: none;
+}

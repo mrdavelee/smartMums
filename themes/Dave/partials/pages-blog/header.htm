@@ -1,0 +1,24 @@
+==
+<div class="lt-row row">
+  <div class="lt-col col s12">
+    <div class="lt-parallax-header parallax-container" style="height: 400px;">
+      {% if post.featured_images|slice(0, 1) %}
+      {% for image in post.featured_images|slice(0, 1) %}
+      <div class="lt-parallax parallax"><img data-src="{{ image.filename }}" src="{{ image.path }}" alt="image"></div>
+      {% endfor %}
+      {% else %}
+      <div class="lt-parallax parallax"><img src="{{ 'assets/img/pages/blog/header/blue.png'|theme }}" alt="image"></div>
+      {% endif %}
+      <div class="lt-parallax-content">
+        <div class="valign-wrapper" style="height: 400px;">
+          <div class="valign">
+            <div class="container">
+              <h2 class="lt-title">{{ post.title }}</h2>
+              <p class="lt-subtitle flow-text">{{ post.summary }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

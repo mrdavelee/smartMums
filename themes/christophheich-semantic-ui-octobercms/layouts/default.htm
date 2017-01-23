@@ -1,0 +1,51 @@
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>{{ this.page.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="description" content="{{ this.page.description }}">
+        <meta name="author" content="">
+        <meta name="keywords" content="">
+        <meta name="language" content="">
+        <meta name="type" content="">
+        <meta name="copyright" content="">
+        <meta name="resource-type" content="">	
+        <meta name="distribution" content="">
+        <meta name="email" content="">
+        <meta name="rating" content="General">
+        <meta name="robots" content="INDEX,FOLLOW">
+        <meta name="revisit-after" content="7 Days">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="content-language" content="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="icon" type="image/x-icon" href="{{ 'assets/images/favicon.ico'|theme }}"/>
+        
+		<!-- CSS -->
+        <link href="{{ [
+            'assets/vendor/semantic/semantic.css',
+            'assets/css/core.css',
+            'assets/css/main.css'
+        ]|theme }}" rel="stylesheet">
+        {% styles %}
+		
+    </head>
+	<body>
+
+        <!-- CONTENT -->
+        {% page %}
+        
+        <!-- SCRIPTS -->
+        <script src="{{ [
+            'assets/vendor/bower_components/jquery/dist/jquery.js',
+            'assets/vendor/semantic/semantic.js',
+            'assets/js/core.js',
+            'assets/js/app.js'
+        ]|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+		
+    </body>
+</html>

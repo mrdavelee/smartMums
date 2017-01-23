@@ -1,0 +1,34 @@
+1485129885a:1:{s:24:"pages-blog/catHeader.htm";a:6:{s:8:"fileName";s:24:"pages-blog/catHeader.htm";s:7:"content";s:676:"==
+<div class="lt-row row">
+  <div class="lt-col col s12">
+    <div class="lt-parallax-header parallax-container" style="height: 400px;">
+      <div class="lt-parallax parallax"><img src="{{ 'assets/img/pages/about/header/img-01.jpg'|theme }}" alt="image"></div>
+      <div class="lt-parallax-content">
+        <div class="valign-wrapper" style="height: 400px;">
+          <div class="valign">
+          <div class="container">
+              <h2 class="lt-title">{{ this.page.title }}</h2>
+              <p class="lt-subtitle flow-text">{{ this.page.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>";s:5:"mtime";i:1484856237;s:6:"markup";s:672:"<div class="lt-row row">
+  <div class="lt-col col s12">
+    <div class="lt-parallax-header parallax-container" style="height: 400px;">
+      <div class="lt-parallax parallax"><img src="{{ 'assets/img/pages/about/header/img-01.jpg'|theme }}" alt="image"></div>
+      <div class="lt-parallax-content">
+        <div class="valign-wrapper" style="height: 400px;">
+          <div class="valign">
+          <div class="container">
+              <h2 class="lt-title">{{ this.page.title }}</h2>
+              <p class="lt-subtitle flow-text">{{ this.page.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

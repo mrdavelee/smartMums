@@ -1,4 +1,4 @@
-1485206868a:1:{s:24:"pages-all/navcontent.htm";a:6:{s:8:"fileName";s:24:"pages-all/navcontent.htm";s:7:"content";s:1017:"[viewBag]
+1485213340a:1:{s:24:"pages-all/navcontent.htm";a:6:{s:8:"fileName";s:24:"pages-all/navcontent.htm";s:7:"content";s:1017:"[viewBag]
 ==
 <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
 <li class="{% if this.page.id == 'about' %}active{% endif %}"><a href="{{ 'about'|page }}">About</a></li>
